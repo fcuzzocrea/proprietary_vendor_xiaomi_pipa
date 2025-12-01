@@ -85,9 +85,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/xiaomi/pipa/proprietary/vendor/etc/displayconfig/display_id_4630946808805831297.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946808805831297.xml \
     vendor/xiaomi/pipa/proprietary/vendor/etc/displayconfig/display_id_4630946922172900481.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946922172900481.xml \
+    vendor/xiaomi/pipa/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
+    vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -212,6 +214,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    libdapparamstorage \
+    libdlbpreg \
+    libdlbvol \
+    libswdap \
+    libswgamedap \
+    libswvqe \
+    vendor.dolby.hardware.dms@2.0 \
     audio.primary.pipa \
     liba2dpoffload_pipa \
     libaudio_log_utils \
@@ -331,6 +340,7 @@ PRODUCT_PACKAGES += \
     libcvp2_hfi \
     libcvp_common \
     libcvpcpuRev_skel \
+    libdlbdsservice \
     libdualcam_optical_zoom_control \
     libipebpsstriping \
     libmi_supernight_raw \
@@ -385,6 +395,7 @@ PRODUCT_PACKAGES += \
     libxml2_vendor \
     sensors.mius.proximity \
     sensors.ssc \
+    vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     capi_v2_dap_cpdp \
@@ -425,8 +436,10 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util \
+    vendor.dolby.hardware.dms.xml \
     batterysecret \
     hvdcp_opti \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     init.qcom.sensors \
     init.qti.chg_policy \
