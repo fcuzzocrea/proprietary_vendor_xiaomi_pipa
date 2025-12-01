@@ -212,14 +212,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    libsensorcal \
-    libsensorslog \
-    libssc \
-    libssc_default_listener \
-    libssccalapi \
-    libultrasound \
-    sensors.mius.proximity \
-    sensors.ssc \
     audio.primary.pipa \
     liba2dpoffload_pipa \
     libaudio_log_utils \
@@ -357,6 +349,8 @@ PRODUCT_PACKAGES += \
     libofflinelog \
     libos \
     librawnrv2_shared \
+    libsensorcal \
+    libsensorslog \
     libsnpe_adsp \
     libsnpe_dsp_domains \
     libsnpe_dsp_domains_system \
@@ -369,6 +363,9 @@ PRODUCT_PACKAGES += \
     libsns_registry_skel \
     libsnsapi \
     libsnsdiaglog \
+    libssc \
+    libssc_default_listener \
+    libssccalapi \
     libswregistrationalgo \
     libswvdec \
     libsymphony-cpu \
@@ -376,6 +373,7 @@ PRODUCT_PACKAGES += \
     libthirdpartpkg \
     libthreadutils \
     libtriplecam_optical_zoom_control \
+    libultrasound \
     libvideofilter_only \
     libvidhance \
     libvidhance_active_ois \
@@ -385,6 +383,8 @@ PRODUCT_PACKAGES += \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
     libxml2_vendor \
+    sensors.mius.proximity \
+    sensors.ssc \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     capi_v2_dap_cpdp \
